@@ -26,8 +26,8 @@ K překonání limitů komerčního softwaru byl vytvořen tento vlastní bioinf
 ## Metodika a pracovní postup
 
 1. **Mikrobiologie a příprava vzorků:** 
-   * Kultivace 61 kmenů ze sbírky CBS/DTO na MEA agaru a Sabouraudově bujónu.
-   * Vysokokapacitní proteinová extrakce za využití kyseliny mravenčí a acetonitrilu.
+   * Kultivace kmenů ze sbírky CBS/DTO na MEA agaru a médiu Sabouraud Broth.
+   * Vysokokapacitní proteinová extrakce za využití kyseliny mravenčí (HCOOH) a acetonitrilu.
 2. **Akvizice spekter a kontrola kvality:**
    * Automatické měření v programu `flexControl` (Bruker) – generování 32 spekter na jeden vzorek.
    * Manuální filtrace plochých spekter a odlehlých hodnot ve `flexAnalysis` (dosažení ≥ 20 kvalitních spekter na kmen).
@@ -44,7 +44,7 @@ K překonání limitů komerčního softwaru byl vytvořen tento vlastní bioinf
 Z důvodu ochrany duševního vlastnictví a interních pravidel Westerdijk institutu **nejsou v tomto repozitáři dostupná surová (raw) spektrální data**. 
 
 Aby byla pipeline plně funkční a spustitelná pro demonstrační účely, je v repozitáři přiložen **matematicky upravený a plně anonymizovaný ukázkový dataset** (`data_matrix.rds`), ze kterého byla vypreparována veškerá skrytá metadata:
-* Obsahuje oříznutý vzorek dat (8 modelových skupin označených anonymně jako `Species_A` až `Species_H`).
+* Obsahuje oříznutý vzorek dat (8 modelových skupin označených anonymně jako `sample1` až `sample8`).
 * Všechny identifikátory byly z objektu smazány.
 * Samotné hodnoty intenzit píků byly matematicky upraveny (zašuměny), aby nebylo možné profily zpětně identifikovat oproti referenčním databázím, avšak geometrie distribuce dat pro výpočty v R zůstala plně zachována.
 
@@ -90,7 +90,7 @@ install.packages(c("readBrukerFlexData", "MALDIquant", "MALDIquantForeign",
 
 # EN: Differentiation of *Penicillium* Species (Series *Viridicata*) Using MALDI-TOF MS & Machine Learning
 
-This repository contains the bioinformatic workflow developed during an Erasmus+ research internship at the **Westerdijk Fungal Biodiversity Institute** (Utrecht, Netherlands). The project focuses on automated species differentiation within the challenging *Penicillium* series *Viridicata* using MALDI-TOF mass spectrometry data and custom R-based statistical/machine learning pipelines.
+This repository contains the bioinformatic workflow developed during an Erasmus+ research internship at the **Westerdijk Fungal Biodiversity Institute** (Utrecht, The Netherlands). The project focuses on automated species differentiation within the challenging *Penicillium* series *Viridicata* using MALDI-TOF mass spectrometry data and custom R-based statistical/machine learning pipelines.
 
 ---
 
@@ -110,7 +110,7 @@ To overcome these software limitations, this custom R pipeline was developed usi
 ## Pipeline & Methodology
 
 1. **Microbiology & Sample Prep:** 
-   * Cultivation of 61 strains from the CBS/DTO collection on MEA agar and Sabouraud Broth.
+   * Cultivation of strains from the CBS/DTO collection on MEA agar and Sabouraud Broth.
    * High-throughput protein extraction using a formic acid/acetonitrile protocol.
 2. **Spectra Acquisition & Quality Control:**
    * Automated runs via `flexControl` (Bruker), generating 32 spectra per sample.
@@ -128,7 +128,7 @@ To overcome these software limitations, this custom R pipeline was developed usi
 Due to intellectual property protection and internal regulations of the Westerdijk Institute, **raw mass spectrometry files are not included in this repository**.
 
 To keep the pipeline fully functional and executable for demonstration purposes, a **mathematically modified and fully anonymized benchmark dataset** (`data_matrix.rds`) is provided, from which all hidden metadata has been stripped:
-* It contains a subset of data (8 model groups labeled anonymously from `Species_A` to `Species_H`).
+* It contains a subset of data (8 model groups labeled anonymously from `sample1` to `sample8`).
 * All identifiers have been removed from the object attributes.
 * The peak intensity values have been mathematically altered (random noise added) to prevent back-identification against reference databases, while maintaining data geometry for R computing.
 
