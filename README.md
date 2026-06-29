@@ -58,10 +58,11 @@ data_matrix <- readRDS("data_matrix.rds")
 
 ## Struktura repozitáře
 
-* `penicillium_analysis.R` - Kompletní R skript obsahující preprocessing dat, identifikaci biomarkerů, PCA, t-SNE a Random Forest modelování.
+* `R/` - Složka obsahující zdrojový kód a zpracovaná data.
+  * `data_matrix.rds` - Předzpracovaná datová matice připravená pro analýzu.
+  * `penicillium_maldi_analysis.R` - Kompletní R skript obsahující preprocessing dat, identifikaci biomarkerů, PCA, t-SNE a Random Forest modelování.
+* `LICENSE` - Licenční podmínky pro použití kódu.
 * `README.md` - Dokumentace projektu.
-
-*Poznámka: Surová data z hmotnostní spektrometrie (`~/R/MSP ready`) jsou uložena lokálně z důvodu institucionální ochrany dat a nejsou součástí tohoto repozitáře.*
 
 ---
 
@@ -141,10 +142,11 @@ data_matrix <- readRDS("data_matrix.rds")
 
 ## Repository Structure
 
-* `penicillium_analysis.R` - The complete R script containing data preprocessing, biomarker identification, PCA, t-SNE, and Random Forest modeling.
+* `R/` - Folder containing source code and processed data.
+  * `data_matrix.rds` - Preprocessed data matrix ready for analysis.
+  * `penicillium_maldi_analysis.R` - The complete R script containing data preprocessing, biomarker identification, PCA, t-SNE, and Random Forest modeling.
+* `LICENSE` - Project license terms.
 * `README.md` - Project documentation.
-
-*Note: Raw mass spectrometry data files (`~/R/MSP ready`) are stored locally due to institutional data restrictions and are not included in this repository.*
 
 ---
 
