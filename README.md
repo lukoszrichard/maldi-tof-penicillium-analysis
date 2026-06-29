@@ -4,9 +4,7 @@
 
 ---
 
-# Čeština
-
-## Diferenciace druhů rodu *Penicillium* (série *Viridicata*) za použití MALDI-TOF MS a strojového učení
+# CZ: Diferenciace druhů rodu *Penicillium* (série *Viridicata*) za použití MALDI-TOF MS a strojového učení
 
 Tento repozitář obsahuje bioinformatický skript vyvinutý během zahraniční výzkumné stáže Erasmus+ ve **Westerdijk Fungal Biodiversity Institute** (Utrecht, Nizozemsko). Projekt je zaměřen na automatizovanou druhovou diferenciaci uvnitř taxonomicky náročné série *Penicillium* *Viridicata* s využitím spektrálních dat z MALDI-TOF hmotnostní spektrometrie a pokročilých statistických modelů v jazyce R.
 
@@ -72,9 +70,7 @@ install.packages(c("readBrukerFlexData", "MALDIquant", "MALDIquantForeign",
 
 <br>
 
-# English
-
-## Differentiation of *Penicillium* Species (Series *Viridicata*) Using MALDI-TOF MS & Machine Learning
+# EN: Differentiation of *Penicillium* Species (Series *Viridicata*) Using MALDI-TOF MS & Machine Learning
 
 This repository contains the bioinformatic workflow developed during an Erasmus+ research internship at the **Westerdijk Fungal Biodiversity Institute** (Utrecht, Netherlands). The project focuses on automated species differentiation within the challenging *Penicillium* series *Viridicata* using MALDI-TOF mass spectrometry data and custom R-based statistical/machine learning pipelines.
 
