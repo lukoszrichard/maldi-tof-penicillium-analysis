@@ -1,6 +1,6 @@
 # 🌐 Jazyk / Language
-* [Čeština](#čeština)
-* [English](#english)
+* [Čeština](#cz-diferenciace-druhů-rodu-penicillium-série-viridicata-za-použití-maldi-tof-ms-a-strojového-učení)
+* [English](#en-differentiation-of-penicillium-species-series-viridicata-using-maldi-tof-ms--machine-learning)
 
 ---
 
