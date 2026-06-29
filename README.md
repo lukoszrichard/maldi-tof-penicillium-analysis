@@ -4,13 +4,15 @@
 
 ---
 
-# CZ: Diferenciace druhů rodu *Penicillium* (série *Viridicata*) za použití MALDI-TOF MS a strojového učení
+# Čeština
+
+## Diferenciace druhů rodu *Penicillium* (série *Viridicata*) za použití MALDI-TOF MS a strojového učení
 
 Tento repozitář obsahuje bioinformatický skript vyvinutý během zahraniční výzkumné stáže Erasmus+ ve **Westerdijk Fungal Biodiversity Institute** (Utrecht, Nizozemsko). Projekt je zaměřen na automatizovanou druhovou diferenciaci uvnitř taxonomicky náročné série *Penicillium* *Viridicata* s využitím spektrálních dat z MALDI-TOF hmotnostní spektrometrie a pokročilých statistických modelů v jazyce R.
 
 ---
 
-## 🔬 Přehled projektu
+## Přehled projektu
 
 ### Problém
 Tradiční morfologická identifikace blízce příbuzných druhů rodu *Penicillium* je extrémně časově náročná a vyžaduje vysokou expertízu. Sekvenování DNA sice poskytuje přesné výsledky, ale pro rutinní diagnostiku s vysokým objemem vzorků je drahé a pomalé.
@@ -23,7 +25,7 @@ K překonání limitů komerčního softwaru byl vytvořen tento vlastní bioinf
 
 ---
 
-## 📊 Metodika a pracovní postup
+## Metodika a pracovní postup
 
 1. **Mikrobiologie a příprava vzorků:** 
    * Kultivace 61 kmenů ze sbírky CBS/DTO na MEA agaru a Sabouraudově bujónu.
@@ -39,7 +41,7 @@ K překonání limitů komerčního softwaru byl vytvořen tento vlastní bioinf
 
 ---
 
-## 🛠️ Struktura repozitáře
+## Struktura repozitáře
 
 * `penicillium_analysis.R` - Kompletní R skript obsahující preprocessing dat, identifikaci biomarkerů, PCA, t-SNE a Random Forest modelování.
 * `README.md` - Dokumentace projektu.
@@ -48,7 +50,7 @@ K překonání limitů komerčního softwaru byl vytvořen tento vlastní bioinf
 
 ---
 
-## 📦 Systémové požadavky a R balíčky
+## Systémové požadavky a R balíčky
 
 ### Verze R
 * **R (v4.4.3)** – Tato specifická verze byla použita k zajištění plné zpětné kompatibility a stability s potřebnými bioinformatickými a hmotnostně-spektrometrickými balíčky.
@@ -70,13 +72,15 @@ install.packages(c("readBrukerFlexData", "MALDIquant", "MALDIquantForeign",
 
 <br>
 
-# EN: Differentiation of *Penicillium* Species (Series *Viridicata*) Using MALDI-TOF MS & Machine Learning
+# English
+
+## Differentiation of *Penicillium* Species (Series *Viridicata*) Using MALDI-TOF MS & Machine Learning
 
 This repository contains the bioinformatic workflow developed during an Erasmus+ research internship at the **Westerdijk Fungal Biodiversity Institute** (Utrecht, Netherlands). The project focuses on automated species differentiation within the challenging *Penicillium* series *Viridicata* using MALDI-TOF mass spectrometry data and custom R-based statistical/machine learning pipelines.
 
 ---
 
-## 🔬 Project Overview
+## Project Overview
 
 ### The Problem
 Traditional morphological identification of closely related *Penicillium* species is highly time-consuming and requires extreme expertise. While DNA sequencing provides accurate results, it is often too expensive and slow for routine high-throughput diagnostics. 
@@ -89,7 +93,7 @@ To overcome these software limitations, this custom R pipeline was developed usi
 
 ---
 
-## 📊 Pipeline & Methodology
+## Pipeline & Methodology
 
 1. **Microbiology & Sample Prep:** 
    * Cultivation of 61 strains from the CBS/DTO collection on MEA agar and Sabouraud Broth.
@@ -105,7 +109,7 @@ To overcome these software limitations, this custom R pipeline was developed usi
 
 ---
 
-## 🛠️ Repository Structure
+## Repository Structure
 
 * `penicillium_analysis.R` - The complete R script containing data preprocessing, biomarker identification, PCA, t-SNE, and Random Forest modeling.
 * `README.md` - Project documentation.
@@ -114,7 +118,7 @@ To overcome these software limitations, this custom R pipeline was developed usi
 
 ---
 
-## 📦 System Requirements & R Packages
+## System Requirements & R Packages
 
 ### R Version
 * **R (v4.4.3)** – This specific version was used to ensure full backwards compatibility and stability with the required bioinformatic and mass spectrometry packages.
