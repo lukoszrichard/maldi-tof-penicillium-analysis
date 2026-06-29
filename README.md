@@ -116,7 +116,7 @@ To overcome these software limitations, this custom R pipeline was developed usi
    * Automated runs via `flexControl` (Bruker), generating 32 spectra per sample.
    * Manual filtering of flatlines and outliers in `flexAnalysis` (ensuring ≥ 20 high-quality spectra per strain).
 3. **Bioinformatic Processing (The R Script):**
-   * **Preprocessing:** Mass spectral trimming (2500–4700 Da), TIC normalization, and averaging.
+   * **Preprocessing:** Mass spectra trimming (2500–4700 Da), TIC normalization, and averaging.
    * **Feature Extraction:** Peak detection (MAD method, SNR = 3) and strict peak binning (tolerance = 0.0009).
    * **Statistical Analysis:** Kruskal-Wallis testing with Benjamini-Hochberg false-positive correction to detect highly specific species biomarkers.
    * **Machine Learning & Multivariate Stats:** Hierarchical clustering (Ward.D2), PCA, t-SNE, and Random Forest classification (500 trees).
@@ -153,7 +153,7 @@ data_matrix <- readRDS("data_matrix.rds")
 ## System Requirements & R Packages
 
 ### R Version
-* **R (v4.4.3)** – This specific version was used to ensure full backwards compatibility and stability with the required bioinformatic and mass spectrometry packages.
+* **R (v4.4.3)** – This specific version was used to ensure full backward compatibility and stability with the required bioinformatic and mass spectrometry packages.
 
 ### Required Packages
 To install all the necessary packages for preprocessing, machine learning, and visualization, run the following command in your R console:
