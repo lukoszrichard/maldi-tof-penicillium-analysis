@@ -132,7 +132,7 @@ To keep the pipeline fully functional and executable for demonstration purposes,
 * All identifiers have been removed from the object attributes.
 * The peak intensity values have been mathematically altered (random noise added) to prevent back-identification against reference databases, while maintaining data geometry for R computing.
 
-Due to the absence of raw spectra, the initial preprocessing sections of `script_novy.R` are commented out. The script execution begins directly by loading the cleaned matrix (however, you need to load the R packages and set the working directory):
+Due to the absence of raw spectra, the initial preprocessing sections of `penicillium_maldi_analysis.R` are commented out. The script execution begins directly by loading the cleaned matrix (however, you need to load the R packages and set the working directory):
 
 ```R
 data_matrix <- readRDS("data_matrix.rds")
