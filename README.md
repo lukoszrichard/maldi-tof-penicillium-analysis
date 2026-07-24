@@ -1,4 +1,4 @@
-# 🌐 Jazyk / Language
+# 🌐 Language / Jazyk
 * [English](#en)
 * [Čeština](#cz)
 
